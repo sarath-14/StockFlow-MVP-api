@@ -1,0 +1,42 @@
+{
+  "name": "stockflow-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarath-14/StockFlow-MVP-api.git"
+  },
+  "author": "Sarath Chandra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sarath-14/StockFlow-MVP-api/issues"
+  },
+  "homepage": "https://github.com/sarath-14/StockFlow-MVP-api#readme",
+  "dependencies": {
+    "@overnightjs/core": "^1.7.6",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "express-jwt": "^8.5.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.3.3",
+    "ts-node": "^10.9.2"
+  },
+  "overrides": {
+    "express": "$express"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^25.5.0",
+    "typescript": "^6.0.2"
+  }
+}
