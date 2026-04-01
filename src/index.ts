@@ -23,7 +23,7 @@ class App extends Server {
         this.app.use(express.json());
 
         this.app.use(cors({
-            origin: ['http://localhost:3000'],
+            origin: ['http://localhost:3000', 'https://stock-flow-mvp-web.vercel.app/login'],
             methods: ['GET', 'POST', 'PUT', 'DELETE'],
             credentials: false
         }))
