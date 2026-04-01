@@ -17,6 +17,6 @@ export const updateSettingsOfOrganization = async (data: IUpdateSettingsArgs) =>
         throw new Error('Threshold cannot be less than 0');
     }
 
-    const updatedSettings = await Settings.findOneAndUpdate({ organizationId: organization }, { $set: { threshold, updatedBy: user } }, { upsert: true });
+    const updatedSettings = await Settings.findOneAndUpdate({ organizationId: organization }, { $set: { threshold, updatedBy: user } }, { upsert: true, new: true });
     return updatedSettings;
 }
